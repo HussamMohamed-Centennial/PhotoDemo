@@ -1,0 +1,11 @@
+{
+  "name": "photodemo",
+  "version": "1.0.0",
+  "description": "PhotoDemo Excersise01",
+  "main": "photo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hussam Eldin Mohamed",
+  "license": "ISC"
+}
