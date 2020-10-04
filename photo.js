@@ -1,5 +1,5 @@
 // console.log(`test`);
-class photo {
+export class photo {
     constructor(width = 8 , height = 10) {
         this.width = width;
         this.height = height;
@@ -24,14 +24,14 @@ class photo {
     }
 }
 
-const photo_one = new photo();
-const photo_two = new photo(4,6);
-console.log('============ Printing of photo objects =========')
-console.log(photo_one.toString());
-console.log(photo_two.toString());
-console.log('================================================')
+// const photo_one = new photo();
+// const photo_two = new photo(4,6);
+// console.log('============ Printing of photo objects =========')
+// console.log(photo_one.toString());
+// console.log(photo_two.toString());
+// console.log('================================================')
 
-class MattedPhoto extends photo {
+export class MattedPhoto extends photo {
     constructor(width ,height , color){
         super(width,height);
         this.color = color;
@@ -47,7 +47,7 @@ class MattedPhoto extends photo {
     }
 }
 
-class FramedPhoto extends photo {
+export class FramedPhoto extends photo {
     constructor(width,height,material,style){
         super(width,height);
         this.material = material;
@@ -63,17 +63,17 @@ class FramedPhoto extends photo {
         return `This is a ${this.width} by ${this.height} ${this.material} Framed photo , Then style is ${this.style} and it cost ${this.price()}`;
     }
 }
-const photo_three = new MattedPhoto(10,15,'black');
-const photo_four = new MattedPhoto(12,18,'Gray');
-console.log('======= Printing of Matted photo objects ======')
-console.log(photo_three.toString());
-console.log(photo_four.toString());
-console.log('================================================')
+// const photo_three = new MattedPhoto(10,15,'black');
+// const photo_four = new MattedPhoto(12,18,'Gray');
+// console.log('======= Printing of Matted photo objects ======')
+// console.log(photo_three.toString());
+// console.log(photo_four.toString());
+// console.log('================================================')
 
-const photo_five = new FramedPhoto(8 , 22 , 'Silver' , 'modern');
-const photo_six = new FramedPhoto(10 , 25 , 'Gold' , 'Classic');
-console.log('======= Printing of Framed photo objects ======')
-console.log(photo_five.toString());
-console.log(photo_six.toString());
-console.log('================================================')
+// const photo_five = new FramedPhoto(8 , 22 , 'Silver' , 'modern');
+// const photo_six = new FramedPhoto(10 , 25 , 'Gold' , 'Classic');
+// console.log('======= Printing of Framed photo objects ======')
+// console.log(photo_five.toString());
+// console.log(photo_six.toString());
+// console.log('================================================')
 
